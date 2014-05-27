@@ -1,3 +1,3 @@
 = version_time_control
 
-Description goes here
+Redmine plugin, used to update the progress of the past versions fonction time
