@@ -11,7 +11,7 @@
   </tr>
   <% @versions.each do |version| %>
       <tr>
-        <td class="version_name"><%= version[:name]%></td>
+        <td class="version_name"><%= version[:projectname]%> - <%= version[:name]%></td>
         <td class="version_time"><%= version[:spent_time]%> hours</td>
         <td class="version_estimated"><%= version[:estimaed_time]%> hours</td>
         <td>

@@ -11,8 +11,7 @@ table.progress tr td.max {
     -o-background-size: 40px 40px;
     background-size: 40px 40px;
 }
-
-table tr td.version_name, table tr td.version_time, table tr td.version_estimated{
+table tr td.version_time, table tr td.version_estimated{
     width:200px;
     text-align: center;
 }

@@ -5,7 +5,7 @@ class VersionTimeControlController < ApplicationController
     @custom_field =  Setting.plugin_version_time_control[:contract_field]
 
     if @custom_field != ""
-      @list = "SELECT v.name, ROUND(sum(t.hours),2) as spent_time,
+      @list = "SELECT p.name as projectname, v.name, ROUND(sum(t.hours),2) as spent_time,
       ROUND(sum(i.estimated_hours)/count(t.id),2) as estimaed_time,
       ROUND((sum(t.hours) / (sum(i.estimated_hours)/count(t.id)))*100,2) as percent,
       100 - ROUND((sum(t.hours) / (sum(i.estimated_hours)/count(t.id)))*100,2) as percenttofinish
@@ -20,7 +20,7 @@ class VersionTimeControlController < ApplicationController
          and c.value = 1
          and c.custom_field_id = " + @custom_field + " GROUP BY t.issue_id"
     else
-      @list = "SELECT v.name, ROUND(sum(t.hours),2) as spent_time,
+      @list = "SELECT p.name as projectname, v.name, ROUND(sum(t.hours),2) as spent_time,
       ROUND(sum(i.estimated_hours)/count(t.id),2) as estimaed_time,
       ROUND((sum(t.hours) / (sum(i.estimated_hours)/count(t.id)))*100,2) as percent,
       100 - ROUND((sum(t.hours) / (sum(i.estimated_hours)/count(t.id)))*100,2) as percenttofinish
