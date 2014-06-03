@@ -2,6 +2,7 @@
     <%= stylesheet_link_tag 'vtc', :plugin => 'version_time_control' %>
 <% end %>
 <h2>Avancement des contrats de maintenance</h2>
+<% if @liste %>
 <table>
   <tr>
     <th>Version </th>
@@ -9,9 +10,9 @@
     <th>Temps estimé </th>
     <th>Avancement </th>
   </tr>
-  <% @versions.each do |version| %>
+  <% @liste.each do |version| %>
       <tr>
-        <td class="version_name"><%= version[:projectname]%> - <%= version[:name]%></td>
+        <td class="version_name"><%= version[:projectname] %> - <%= version[:name] %></td>
         <td class="version_time"><%= version[:spent_time]%> hours</td>
         <td class="version_estimated"><%= version[:estimaed_time]%> hours</td>
         <td>
@@ -27,18 +28,26 @@
               <% if version[:percenttofinish] <= 0 %>
                   <td class="todo" style="width:0%"></td>
               <% else %>
-                   <td class="todo" style="width:<%= version[:percenttofinish]%>%"></td>
+                  <td class="todo" style="width:<%= version[:percenttofinish]%>%"></td>
               <% end %>
             </tr>
             </tbody>
           </table>
-            <% if version[:percent] > 100 %>
-                ! + de 100%
-            <% else %>
-                <%= version[:percent]%>%
-            <% end %>
+          <% if version[:percent] > 100 %>
+              ! + de 100%
+          <% else %>
+              <%= version[:percent]%>%
+          <% end %>
         </td>
       </tr>
       <hr>
   <% end %>
 </table>
+<% end %>
+
+<% if @message %>
+    <p><%= @message %> <a href="/redmine/settings/plugin/version_time_control"> lien vers la configuration</a></p>
+    <p><%= @liste %></p>
+    <p><%= @val %></p>
+    <p><%= @te %></p>
+<% end %>
