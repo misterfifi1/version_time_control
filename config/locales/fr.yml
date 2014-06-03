@@ -1,3 +1,11 @@
-# English strings go here for Rails i18n
-en:
-  text_my_super_plugin: My great plugin
+fr:
+  label_version: Version
+  label_spent_time: Temps passé
+  label_expected_time: Temps estimé
+  label_progression: Avancement
+  label_project: Projet
+  label_hours: Heures
+  label_configuration: Merci de configurer le plugin
+  label_contract_field: Champ personnalisé type maintenance
+  label_hours_field: Champ personnalisé temps estimé
+  label_configuration_link: Lien vers la configuration

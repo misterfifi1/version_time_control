@@ -5,16 +5,16 @@
 <% if @liste %>
 <table>
   <tr>
-    <th>Version </th>
-    <th>Temps passé </th>
-    <th>Temps estimé </th>
-    <th>Avancement </th>
+    <th><%=h l(:label_project) %> - <%=h l(:label_version) %> </th>
+    <th><%=h l(:label_spent_time) %> </th>
+    <th><%=h l(:label_expected_time) %> </th>
+    <th><%=h l(:label_progression) %> </th>
   </tr>
   <% @liste.each do |version| %>
       <tr>
         <td class="version_name"><%= version[:projectname] %> - <a href="/redmine/versions/<%= version[:version] %>"><%= version[:name] %></a></td>
-        <td class="version_time"><%= version[:spent_time]%> hours</td>
-        <td class="version_estimated"><%= version[:estimaed_time]%> hours</td>
+        <td class="version_time"><%= version[:spent_time]%> <%=h l(:label_hours) %></td>
+        <td class="version_estimated"><%= version[:estimaed_time]%> <%=h l(:label_hours) %></td>
         <td>
           <table class="version_progress progress progress-0" style="width: 40em;">
             <tbody>
@@ -46,8 +46,5 @@
 <% end %>
 
 <% if @message %>
-    <p><%= @message %> <a href="/redmine/settings/plugin/version_time_control"> lien vers la configuration</a></p>
-    <p><%= @liste %></p>
-    <p><%= @val %></p>
-    <p><%= @te %></p>
+    <p><%=h l(:label_configuration) %> <a href="/redmine/settings/plugin/version_time_control"><%=h l(:label_configuration_link) %></a></p>
 <% end %>

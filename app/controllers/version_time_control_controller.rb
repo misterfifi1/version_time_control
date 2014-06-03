@@ -42,7 +42,7 @@ class VersionTimeControlController < ApplicationController
         end
       end
     else
-      @message = "Merci de configurer le plugin"
+      @message = "true"
     end
 
 

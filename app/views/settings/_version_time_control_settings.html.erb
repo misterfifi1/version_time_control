@@ -1,8 +1,10 @@
-<p>
-  <label>Champs de référence contrat maintenance</label>
-  <%= select_tag("settings[contract_field]", options_from_collection_for_select(VersionCustomField.where(:field_format => ["bool"]).order("name ASC"), :id, :name, Setting.plugin_version_time_control[:contract_field]), :include_blank => true) %>
-</p>
-<p>
-  <label>Champs de référence contrat maintenance</label>
-  <%= select_tag("settings[hours_field]", options_from_collection_for_select(VersionCustomField.where(:field_format => ["int"]).order("name ASC"), :id, :name, Setting.plugin_version_time_control[:hours_field]), :include_blank => true) %>
-</p>
+<div class="version_time_control">
+    <p>
+      <label><%=h l(:label_contract_field) %></label>
+      <%= select_tag("settings[contract_field]", options_from_collection_for_select(VersionCustomField.where(:field_format => ["bool"]).order("name ASC"), :id, :name, Setting.plugin_version_time_control[:contract_field]), :include_blank => true) %>
+    </p>
+    <p>
+      <label><%=h l(:label_hours_field) %></label>
+      <%= select_tag("settings[hours_field]", options_from_collection_for_select(VersionCustomField.where(:field_format => ["int"]).order("name ASC"), :id, :name, Setting.plugin_version_time_control[:hours_field]), :include_blank => true) %>
+    </p>
+</div>
