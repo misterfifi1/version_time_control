@@ -4,7 +4,7 @@ Redmine::Plugin.register :version_time_control do
   name 'Version Time Control plugin'
   author 'Misterfifi'
   description 'Redmine plugin, used to update the progress of the past versions fonction time'
-  version '1.0'
+  version '1.1.0'
   url 'http://trium-agency.fr'
   author_url 'http://trium-agency.fr'
 

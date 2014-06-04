@@ -15,3 +15,24 @@ table tr td.version_time, table tr td.version_estimated{
     width:200px;
     text-align: center;
 }
+fieldset.test {
+    margin-bottom: 20px;
+    border-bottom: dotted 2px #A4A4A4;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+table.progress_contracts {
+    border-collapse: collapse;
+    border-left: solid 5px;
+}
+table.progress_contracts tr.progress_contracts_row{
+    background-color: #FF8000;
+    height: 35px;
+    color: #fff;
+}
+tr.version_global{
+    padding-top: 50px;
+}
+td.version{
+    padding: 15px;
+}

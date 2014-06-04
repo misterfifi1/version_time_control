@@ -1,7 +1,7 @@
 en:
   label_version: Version
   label_spent_time: Spent time
-  label_expected_time: Expected time
+  label_expected_time: Time sold
   label_progression: Progression
   label_project: Project
   label_hours: Hours
@@ -9,3 +9,5 @@ en:
   label_contract_field: Custom Field - Support Type
   label_hours_field: Custom field  - estimated time
   label_configuration_link: Configuration link
+  label_issues_list: Issues list
+  label_progress_contracts: Progress of maintenance contracts

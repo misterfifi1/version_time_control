@@ -1,7 +1,7 @@
 fr:
   label_version: Version
   label_spent_time: Temps passé
-  label_expected_time: Temps estimé
+  label_expected_time: Temps vendu
   label_progression: Avancement
   label_project: Projet
   label_hours: Heures
@@ -9,3 +9,5 @@ fr:
   label_contract_field: Champ personnalisé type maintenance
   label_hours_field: Champ personnalisé temps estimé
   label_configuration_link: Lien vers la configuration
+  label_issues_list: Liste des tâches
+  label_progress_contracts: Avancement des contrats de maintenance
