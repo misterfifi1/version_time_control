@@ -8,7 +8,7 @@ After the repo is cloned run the following tasks on your {REDMINE_ROOT}:
 
 = bundle install
 
- = bundle exec rake redmine:plugins NAME=project_overview RAILS_ENV=production
+ = bundle exec rake redmine:plugins NAME=version_time_control RAILS_ENV=production
 
 Restart your redmine and navigate to Administration > Plugins for configuration options
 
