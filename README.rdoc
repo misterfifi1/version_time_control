@@ -1,4 +1,4 @@
-= version time control
+= Version time control
 
 = Installation
 
