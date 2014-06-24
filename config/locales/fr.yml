@@ -1,4 +1,6 @@
 fr:
+  version_time_control_title: Maintenance
+
   label_version: Version
   label_spent_time: Temps passé
   label_expected_time: Temps vendu

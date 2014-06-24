@@ -1,4 +1,6 @@
 en:
+  version_time_control_title: Maintenance
+
   label_version: Version
   label_spent_time: Spent time
   label_expected_time: Time sold

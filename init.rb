@@ -8,7 +8,7 @@ Redmine::Plugin.register :version_time_control do
   url 'http://trium-agency.fr'
   author_url 'http://trium-agency.fr'
 
-  menu :top_menu, :version_time_control, { :controller => 'version_time_control', :action => 'index' }, :caption => 'Maintenance'
+  menu :top_menu, :version_time_control, { :controller => 'version_time_control', :action => 'index' }, :caption => :version_time_control_title
 
   settings :default => {
       'contract_field' => true,

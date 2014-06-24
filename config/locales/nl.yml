@@ -1,0 +1,15 @@
+nl:
+  version_time_control_title: Onderhoudscontracten
+
+  label_version: Versie
+  label_spent_time: Gespendeerde tijd
+  label_expected_time: Tijd ingekocht
+  label_progression: Progressie
+  label_project: Project
+  label_hours: Uren
+  label_configuration: "Bedankt, om de plugin te configureren"
+  label_contract_field: Custom Field - Support type
+  label_hours_field: Custom Field  - Geschatte tijd
+  label_configuration_link: Configureer
+  label_issues_list: Issues lijst
+  label_progress_contracts: Status van onderhoudscontracten
