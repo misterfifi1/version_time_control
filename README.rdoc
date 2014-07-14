@@ -1,4 +1,6 @@
 = Version time control
+This plugin is used to track your maintenance contracts. it allows you to create versions that are dedicated to contracts with a limited time to complete. 
+This plugin can be used for contract management: maintenance, web-mastering, support ... 
 
 = Installation
 
@@ -11,6 +13,15 @@ After the repo is cloned run the following tasks on your {REDMINE_ROOT}:
  = bundle exec rake redmine:plugins NAME=version_time_control RAILS_ENV=production
 
 Restart your redmine and navigate to Administration > Plugins for configuration options
+
+= Configuration
+
+To make the plugin work, you must add two custom fields on versions. 
+{REDMINE_ROOT}/custom_fields
+- A Boolean field to activate the plugin or name 
+- An integer field to the maximum time contract
+
+Once the plugin is installed, go to the plugin administration : {REDMINE_ROOT}/admin/plugins to configure the reference fields.
 
 = Contributions
 
